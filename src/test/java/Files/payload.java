@@ -20,6 +20,9 @@ public class payload {
                 "\"language\": \"French-IN\"\n" +
                 "}";
 
+
+
+
     }
     public static String coursePrice(){
 
@@ -47,5 +50,28 @@ public class payload {
                 "]\n" +
                 "}\n" +
                 "\n";
+    }
+    public static String AddBookWithArray(String isbn, String aisle){
+
+        String addBookPayload="{\n" +
+                "\n" +
+                "\"name\":\"Learn Appium Automation with Java\",\n" +
+                "\"isbn\":\""+isbn+"\",\n" +
+                "\"aisle\":\""+aisle+"\",\n" +
+                "\"author\":\"John foe\"\n" +
+                "}\n";
+        return addBookPayload;
+    }
+
+    public static String AddBook(){
+
+        String addBookPayload="{\n" +
+                "\n" +
+                "\"name\":\"Learn Appium Automation with Java\",\n" +
+                "\"isbn\":\"eeerrt\",\n" +
+                "\"aisle\":\"23456\",\n" +
+                "\"author\":\"John foe\"\n" +
+                "}\n";
+        return addBookPayload;
     }
 }
